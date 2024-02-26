@@ -1,0 +1,48 @@
+{
+    "headers": [
+      {
+        "url": "home",
+        "name": "Home"
+      },
+      {
+        "url": "catalog",
+        "name": "Catalog"
+      },
+      {
+        "url": "blog",
+        "name": "Blog"
+      }
+    ],
+    "blocks": [
+      {
+        "tag": "null",
+        "title": "null",
+        "alt": "first-screen-alt",
+        "id": "null"
+      },
+      {
+        "tag": "h1",
+        "title": "alala",
+        "alt": "alt1",
+        "id": "lol"
+      }
+    ],
+    "faqs": [
+      {
+        "name": "Летняя Коллекция",
+        "text": "Свежий взгляд на лето"
+      },
+      {
+        "name": "Технические Гаджеты",
+        "text": "Смарт Технологии"
+      }
+    ],
+    "faqs-block": [
+      {
+        "title": "FAQ",
+        "tag-title": "h2",
+        "tag-list": "h3"
+      }
+    ]
+  }
+  
