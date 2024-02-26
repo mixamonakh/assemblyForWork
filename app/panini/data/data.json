@@ -1,47 +1,118 @@
 {
     "headers": [
       {
-        "url": "home",
-        "name": "Home"
+        "url": "descarca",
+        "name": "Descarcă"
       },
       {
-        "url": "catalog",
-        "name": "Catalog"
+        "url": "instalarea",
+        "name": "Instalarea"
       },
       {
-        "url": "blog",
-        "name": "Blog"
+        "url": "pariuri",
+        "name": "Pariuri sportive"
+      },
+      {
+        "url": "bonus",
+        "name": "Bonus"
+      },
+      {
+        "url": "inregistrate",
+        "name": "Înregistrare"
+      },
+      {
+        "url": "depozit",
+        "name": "Depozit"
       }
     ],
     "blocks": [
       {
         "tag": "null",
         "title": "null",
-        "alt": "first-screen-alt",
+        "alt": "null",
         "id": "null"
       },
       {
-        "tag": "h1",
-        "title": "alala",
-        "alt": "alt1",
-        "id": "lol"
+        "tag": "null",
+        "title": "null",
+        "alt": "null",
+        "id": "null"
+      },
+      {
+        "tag": "h2",
+        "title": "Descarcă aplicația Superbet",
+        "alt": "pagina pentru descarcă superbet aplicația",
+        "id": "descarca"
+      },
+      {
+        "tag": "h2",
+        "title": "Instalarea aplicației Superbet",
+        "alt": "pagina de instalare a aplicației mobile superbet",
+        "id": "instalarea"
+      },
+      {
+        "tag": "h2",
+        "title": "Superbet pariuri sportive",
+        "alt": "exemplu pariuri sportive în aplicație superbet",
+        "id": "pariuri"
+      },
+      {
+        "tag": "h2",
+        "title": "Bonus Superbet",
+        "alt": "exemplu de bonus în aplicația mobilă superbet",
+        "id": "bonus"
+      },
+      {
+        "tag": "h2",
+        "title": "Înregistrare Superbet",
+        "alt": "formularul de înregistrare din anexă superbet",
+        "id": "inregistrate"
+      },
+      {
+        "tag": "h2",
+        "title": "Site-ul Superbet",
+        "alt": "pagina de pornire superbet pe o tabletă"
+      },
+      {
+        "tag": "h2",
+        "title": "Cum faci un depozit și cum îți scoți banii?",
+        "alt": "pagina pentru depunere în aplicația mobilă superbet",
+        "id": "depozit"
+      },
+      {
+        "tag": "h2",
+        "title": "Relații Clienți",
+        "alt": "pagina de asistență în aplicație superbet"
+      },
+      {
+        "tag": "h2",
+        "title": "Avantaje și dezavantaje",
+        "alt": "avantajele și dezavantajele aplicației superbet"
+      },
+      {
+        "tag": "h2",
+        "title": "Merită să descărcați aplicația Superbet?",
+        "alt": "pagina de feedback în aplicație superbet"
       }
     ],
     "faqs": [
       {
-        "name": "Летняя Коллекция",
-        "text": "Свежий взгляд на лето"
+        "name": "Mă pot uita la meciuri live direct din aplicație?",
+        "text": "Da, această funcție este apreciată din acest punct de vedere și anume că oferă jucătorilor posibilitatea de a Superbet pariuri sportive live imediat ce instalează aplicația."
       },
       {
-        "name": "Технические Гаджеты",
-        "text": "Смарт Технологии"
+        "name": "Este ușor să depui și să retragi fondurile prin aplicație?",
+        "text": "Procesul de depunere și retragere este ușor. Accesați funcția de Plăți pentru a gestiona banii în contul de pariuri."
+      },
+      {
+        "name": "Se pot găsi și promoții în cadrul aplicației mobile?",
+        "text": "Sigur că da, pe Superbet aplicație veți putea să găsiți toate promoțiile care vă vor ajuta în a vă îmbunătăți veniturile."
       }
     ],
     "faqs-block": [
       {
         "title": "FAQ",
-        "tag-title": "h2",
-        "tag-list": "h3"
+        "tag-title": "h2"
       }
     ]
   }

@@ -1,6 +1,5 @@
 .grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: .1fr 1fr;
     column-gap: 20px;
     &__mb{
@@ -20,8 +19,13 @@
 // Общее для заголовка
 
 .section-title {
-    color: red;
+    color: #fff;
+    display: inline-block;
     margin-bottom: 30px;
+    padding: 10px 20px;
+    border-radius: 0px 50px 50px 20px;
+    background: var(--grey, #212121);
+    text-transform: capitalize;
 }
 
 // У 1 блока - заголовок справа
@@ -29,15 +33,22 @@
     section:nth-child(2n + 1) {
         .grid {
             grid-template-areas: "grid__3 grid__1" "grid__3 grid__2";
+            grid-template-columns: .9fr 1fr;
         }
         .section-title {
             text-align: right;
+        }
+        .section-title {
+            border-radius: 50px 0px 20px 50px;
         }
     }
     section:nth-child(2n) {
         .grid {
             grid-template-areas: "grid__1 grid__3" "grid__2 grid__3";
+            grid-template-columns: 1fr .9fr;
+
         }
+        
     }
 }
 // У 1 блока - заголовок слева
@@ -74,7 +85,7 @@
         margin-bottom: 20px;
     }
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         grid-template-rows: repeat(3, auto);
         grid-template-areas: unset !important;
         &__1 {

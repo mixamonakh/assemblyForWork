@@ -1,38 +1,68 @@
+.menu-btn-text {
+    color: var(--grey-very-light, #ECECEC);
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px 0px 20px 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red-main, #D73023);
+}
+
+.reg_btn {
+    background: var(--red-dark, #A42319);
+}
+
+.menu__buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
 // ! компонент - меню
 .menu {
+    padding-right: 24px;
+
     &-inner {
         display: flex;
-        gap: 5px;
+        gap: 30px;
     }
+
     &__socials {
         li {
             img {
                 width: 14px;
                 height: 14px;
             }
-            &:not(:last-child){
+
+            &:not(:last-child) {
                 margin-right: 14px;
             }
         }
     }
+
     &__link {
-        color: var(--black);
-        font-size: 12px;
+        color: var(--grey-very-light, #ECECEC);
+        font-size: 14px;
+        text-transform: uppercase;
         font-weight: 700;
-        line-height: 1;
-        padding: 8px 4px;
-        
+
         white-space: nowrap;
         background-color: transparent;
         text-decoration: none;
         position: relative;
-        text-transform: capitalize;
         overflow: hidden;
         height: 100%;
         display: flex;
         align-items: center;
     }
 }
+
 // ! кнопка открытия меню (гамбургер)
 .menu-btn {
     width: 52px;
@@ -40,8 +70,11 @@
     display: none;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px 10px 15px;
     cursor: pointer;
+    position: absolute;
+    z-index: 300;
+    left: -45px;
+
     &::before {
         content: '';
         width: 20px;
@@ -51,62 +84,84 @@
 
     // ! класс активности для преобразования в крестик
     &.active {
+        left: -40px;
         &::before {
             background: url('../icons/btn-menu-active.svg')no-repeat 0%/contain;
+            width: 40px;
+            height: 40px;
         }
-    } 
+    }
 }
-@media (max-width: 1199px) {
-}
+
+@media (max-width: 1199px) {}
+
 @media (max-width: 991px) {
+    .menu {
+        &__buttons {
+            gap: 5px;
+            padding: 0;
+            margin-left: auto;
+            margin-bottom: 0;
+            padding-right: 20px;
+        }
+
+        &-btn-text {
+            font-size: 9px;
+            line-height: 10px;
+            padding: 7px;
+        }
+    }
+
     .menu-btn {
         display: flex;
     }
+
     // ! меню уходит за vieport
     .menu {
-        background-color: #B8BCC1;
-        padding: 20px 20px 48px 20px;
+        padding: 50px 20px 20px 20px;
+        background: var(--grey, #212121);
 
         position: absolute;
         transform: translateX(-200%);
-        top: 48px;
+        top: 0;
         bottom: 0;
         height: 100vh;
         z-index: 100;
-        left: 0;
+        left: -50px;
         border-radius: 0;
-        width: 60%;
+        width: calc(100% + 50px);
         overflow-y: auto;
+
         &-inner {
             height: auto;
+            gap: 10px;
         }
+
         ul {
             flex-direction: column;
             width: 100%;
         }
+
         &__link {
-            color: #000;
             font-size: 14px;
+            color: #fff;
             line-height: 18px;
-            padding: 8px 10px;
-            
+            padding: 15px 20px;
+            border-radius: 30px 0px 12px 30px;
+            background: var(--red-main, #D73023);
+
             justify-content: center;
             position: static;
             display: flex;
             align-items: center;
             position: relative;
         }
-        &__buttons {
-            padding: 20px;
-        }
+
         // ! меню появляется
         &.active {
             transform: translateX(0%);
         }
     }
 }
-@media (max-width: 768px) {
-    .menu {
-        width: 100%;
-    }
-} 
+
+@media (max-width: 768px) {}

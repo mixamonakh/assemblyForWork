@@ -5,68 +5,33 @@
     // ! для тега body
     --body-font-size: 14px;
     --body-font-weight: 400;
-    --body-line-height: 18px;
-    --body-color-text: var(--black);
-    --body-color-background: var();
+    --body-line-height: 14px;
+    --body-color-text: #111419;
+    --body-color-background: #fff;
 
     // ! основной шрифт *
-    --default-font-family: 'AtypDisplay', sans-serif;
+    --default-font-family: 'Rubik', sans-serif;
 
     // ! отступы между загаловками, списками
 
-    --text-margin-bottom: 20px;
+    --text-margin-bottom: 25px;
 
     // ! отступ между секциями
-    --section-margin-bot: 30px;
+    --section-margin-bot: 60px;
 
     // ! Стилизация заголовков h1-h4
-    --title-default-font-size: 30px;
-    --title-default-font-weight: 600;
+    --title-default-font-size: 32px;
+    --title-default-font-weight: 900;
     --title-default-line-height: 100%;
-
-    --h4-font-size: 20px;
-    --h4-font-weight: 600;
-    --h4-line-height: 100%;
-
-    // ! стилизация формы
-
-    --form-input-border-width: 11px;
-    --form-input-border-color: #000;
-    --form-input-border-radius: 10px;
-    --form-input-background: #fff;
-    --form-input-color: #000;
-    --form-input-color-placeholder: grey;
-    --form-input-padding: 10px;
-
-    // ! отступы между элементами формы
-    --form-item-margin-bottom: 10px;
-
-        // ! кнопка формы
-
-        --form-button-font-size: 16px;
-        --form-button-font-weight: 700;
-        --form-button-border-radius: 10px;
-        --form-button-color: #fff;
-        --form-button-backgorund: #000;
-        --form-button-padding: 15px 30px;
 
     // ! стилизация акордиона
 
-    --accordion-item-header-background: var();
-    --accordion-item-content-background: var();
+    --accordion-item-header-background: transparent;
+    --accordion-item-content-background: transparent;
     --accordion-item-color-title-active: #fff;
-    --accordion-item-margin-bottom: 20px;
-    --accordion-padding-head: 20px;
-    --accordion-padding-content: 0 20px 20px 20px;
-
-    // ! стилизация свайпера
-
-    --swiper-width-arrow: 14px;
-    --swiper-height-arrow: 14px;
-    --swiper-bg-pagination: grey;
-    --swiper-bg-pagination-active: red;
-    --swiper-bottom-pagination: 0;
-    --swiper-padding-bottom-pagination: 10px;
+    --accordion-item-margin-bottom: 25px;
+    --accordion-padding-head: 20px 0 14px 0;
+    --accordion-padding-content: 14px 0 20px 0;
 }
 @media (max-width: 991px) {
     // ! отступ main для header fixed
@@ -76,13 +41,12 @@
 }
 @media (max-width: 767px) {
     :root {
-        --body-font-size: 14px;
-        --body-line-height: 18px;
+        --body-font-size: 12px;
+        --body-line-height: 14px;
 
-        --section-margin-bot: 30px;
+        --section-margin-bot: 40px;
     
-        --title-default-font-size: 30px;
-        --h4-font-size: 20px;
+        --title-default-font-size: 24px;
     }
 }
 
@@ -133,7 +97,7 @@ p, ul {
 @media (max-width: 767px) {
     .image {
         &_mb-mob{
-            margin-bottom: 20px;
+            margin-bottom: 0;
         }
     }
 }

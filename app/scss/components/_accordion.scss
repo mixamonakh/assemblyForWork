@@ -22,7 +22,9 @@
     margin-bottom: var(--accordion-item-margin-bottom);
 }
 .section__item {
-    border-bottom: 1px solid var(--yellow-main);
+    &:not(:last-child){
+        border-bottom: 1px solid var(--text-grey, #D1A4A1);
+    }
 }
 .accordion {
     .item {
@@ -42,7 +44,10 @@
         }
         // ! заголовок
         &__name {
-            text-transform: capitalize;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
         }
         // ! иконка
         &__icon{
@@ -63,6 +68,7 @@
             padding: var(--accordion-padding-content);
             background: var(--accordion-item-content-background);
             transition: 0.6s;
+            color: #fff;
             p {
                 margin-bottom: 0;
             }

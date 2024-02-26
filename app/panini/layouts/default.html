@@ -31,11 +31,8 @@
     <main class="{{ napravlenie }}">
     {{#ifpage 'index'}}
         {{> first-screen}}
-        <div class="container">
-            {{> body}}
-        </div>
+        {{> body}}
         {{> accordion}}
-        {{> review}}
     {{/ifpage}}
     {{#ifpage '404'}}
         {{> first-screen-error}}

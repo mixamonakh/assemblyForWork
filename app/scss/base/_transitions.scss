@@ -8,13 +8,8 @@
     transition: var(--anim);
 }
 .menu {
+    transition: var(--anim);
     &__link {
-        transition: var(--anim);
-    }
-}
-
-@media (max-width: 768px) {
-    .menu {
         transition: var(--anim);
     }
 }
