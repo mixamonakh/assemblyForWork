@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+
+    <link rel="preload" href="css/fonts.css" as="style">
+    <link rel="preload" href="css/libs-preload.min.css" as="style">
+    <link rel="preload" href="js/libs.min.js" as="script">
+    <link rel="preload" href="js/script.js" as="script">
+
+    <link rel="stylesheet" href="css/kit-style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+{{#ifpage 'index'}}
+    {{> opengraph}}
+{{/ifpage}}
+</head>
+
+<body>
+{{#ifpage 'index'}}
+    {{> header}}
+{{/ifpage}}
+{{#ifpage '404'}}
+    {{> header_error}}
+{{/ifpage}}
+
+    <main class="{{ napravlenie }}">
+    {{#ifpage 'index'}}
+        {{> first-screen}}
+        <div class="container">
+            {{> body}}
+        </div>
+        {{> accordion}}
+        {{> review}}
+    {{/ifpage}}
+    {{#ifpage '404'}}
+        {{> first-screen-error}}
+    {{/ifpage}}
+    </main>
+{{#ifpage 'index'}}
+    {{> footer }}
+    {{> loadscripts }}
+    {{> schema }}
+{{/ifpage}}
+{{#ifpage '404'}}
+    {{> loadscripts }}
+{{/ifpage}}
+</body>
+
+</html>
